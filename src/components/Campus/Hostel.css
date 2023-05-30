@@ -1,0 +1,28 @@
+.back-clr{
+
+    color: rgb(236, 240, 12);
+    size: 30px;
+  
+  }
+
+  .head{
+    font-size: 35px;
+    font-family: 'roboto';
+    font-weight: bold;
+    padding: 15px;
+    text-decoration: none;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  
+  }
+  .para{
+    padding: 10px;
+    margin-top: 15px;
+    color: rgb(173, 172, 172);
+  }
+  @media screen and (max-width:786px){
+    .hstl{
+      margin-top: 4rem;
+    }
+    
+  }

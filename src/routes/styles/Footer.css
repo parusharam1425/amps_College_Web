@@ -1,0 +1,119 @@
+/* CSS for Footer Component */
+
+/* Footer container */
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: rgb(0,0,0,0.9);
+  }
+  
+  /* Footer sections */
+  .footer-section {
+    flex: 1 1 300px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* Footer headings */
+  .footer-section h3 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #fff;
+  }
+  .footer-section p {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #fff;
+  }
+  
+  /* Footer links */
+  .footer-section ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+  }
+  
+  .footer-section ul li {
+    margin-bottom: 5px;
+  }
+  
+  .footer-section ul a {
+    color: #333;
+    text-decoration: none;
+    color: yellow;
+  }
+  .hr-footer{
+    border: 3px solid yellow;
+   text-align: center;
+   width: 30vw;
+  }
+  
+  /* Footer bottom section */
+  .footer-bottom {
+    padding: 10px;
+    background-color: black;
+    text-align: center;
+  }
+  
+  .footer-bottom p {
+    margin: 0;
+    color: #fff;
+    
+  }
+  
+  .footer-bottom .footer-links {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10px;
+  }
+  
+  .footer-bottom .footer-links li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  .footer-bottom .footer-links li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  /* Back to top button */
+  .back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+  }
+  .foot{
+    color: #fff;
+  }
+  
+  .back-to-top:hover {
+    background-color: #555;
+  }
+
+.icon{
+  padding-right: 1rem;
+}
+
+
+@media  screen and  (max-width:768px) {
+  .hr-footer{
+    width:50vw;
+    margin-left: 6rem;
+  }
+  
+}

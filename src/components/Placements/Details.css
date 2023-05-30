@@ -1,0 +1,38 @@
+
+.head{
+    text-align: center;
+    font-weight: 900;
+    font-size: 23px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-decoration: underline;
+    padding:18px;
+
+}
+
+.bg-img{
+    background-image: url("../AboutUs/Images/detils-bg.jpeg");
+    height:70vh;
+    background-size: cover;
+}
+
+.sub-para{
+    color:rgb(245, 43, 43);
+}
+
+.a{
+    text-decoration: none;
+}
+
+[data-aos="fade-up"] {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 1s ease, transform 1.5 ease;
+  }
+  
+  [data-aos="fade-up"].aos-animate {
+    opacity: 0.5s;
+    transform: translateY(0);
+  }
+  
+@media  screen and (max-width:768px) {
+}

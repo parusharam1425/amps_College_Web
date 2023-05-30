@@ -1,0 +1,163 @@
+
+  
+  .cse-heading {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .engineering-heading {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .cse-department-heading {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+ 
+  .a{
+    text-decoration: none;
+    color: black;
+  }
+  
+  .horizontal-line {
+    /* border-top: 1px solid #000;
+    margin: 10px 0; */
+    color:#f30f0f;
+    border-width: 3px;
+    font-weight: bold;
+    border-bottom-color: #c50227;
+    border-bottom-style: solid;
+    font-size: 16px;
+  }
+  
+  .horizontal-line2 {
+    /* border-top: 1px solid #ccc;
+    margin: 10px 0; */
+
+    color:#f30f0f;
+    border-width: 1px;
+    font-weight:bold;
+    border-bottom-color: #c50227;
+   
+    font-size: 16px;
+  }
+  
+  .size1-list {
+    padding-left: 0;
+    list-style: none;
+  }
+  
+  .size1-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .size1-list li svg {
+    margin-right: 5px;
+  }
+  
+  .department-card-heading {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .department-card-heading2 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .department-card-heading3 {
+    margin-bottom: 5px;
+  }
+  
+  .cent {
+    text-align: center;
+    margin-top: 20px;
+  }
+  .about-cse {
+    border: 1.5px solid rgba(0, 0, 0, 0.5);
+    border-radius: 7px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  
+  .about-cse-heading {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .cse-para {
+    margin-bottom: 20px;
+  }
+  .contact{
+    margin-right: 2rem;
+  }
+  
+  .mission-heading {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .mission-para {
+    padding-left: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .last-one {
+    margin-top: 30px;
+    text-align: center;
+  }
+  
+  .bottom-heading {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .bottom-heading2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .last-para {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  .btn-contact-us,
+  .btn-see-more {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+  }
+  /* @media (max-width:576px) and (max-width:768px) {
+    .content-container{
+      padding: 40px;
+ } 
+    
+  }*/
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translate3d(0, 20px, 0);
+    }
+    to {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  
+  .animate__animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+  }
+  

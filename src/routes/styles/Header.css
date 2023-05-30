@@ -1,0 +1,54 @@
+.head-logo{
+width: 13vw;
+height: 12vh;
+border-radius: 20px;
+}
+.header{
+    background-color: aliceblue;
+   
+}
+.maps-head{
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 3vw;
+margin-bottom: -1.4rem;
+line-height: 1.8rem;
+    font-weight: bolder;
+    color: rgb(48, 14, 144);
+
+}
+
+.span-head{
+  color: rgb(48, 14, 144);
+padding-right: 2rem;
+font-size: 20px;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.head{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 12vh;
+}
+.hr{
+  border:2px  solid #f98502;
+  margin-bottom: -0rem;
+}
+  @media screen and (max-width: 768px) {
+    .maps-head {
+      font-size: 20px;
+      line-height: 1.5rem;
+    }
+  
+    .span-head {
+      font-size: 16px;
+      padding-left: 1rem;
+    }
+  
+    .head-logo {
+      width: 60px;
+      height: 60px;
+      display: none;
+    }
+  }
+  
