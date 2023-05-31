@@ -55,7 +55,7 @@ export default function Gallery() {
         <div className='image-gallery col-12 col-md-6'>
           <header className='gallery-header' data-aos='fade-up' data-aos-delay='300'>Placement Gallery</header>
           <div className='image-grid '>
-            <img src={Img1} alt='6.jpg' className='image' data-aos='fade-up' data-aos-delay='100'/>
+            <img src={Img1} alt='img.jpg' className='image' data-aos='fade-up' data-aos-delay='100'/>
             <img src={Img2} alt='tcs.jpg' className='image' data-aos='fade-up' data-aos-delay='100' />
            </div>
            </div>
