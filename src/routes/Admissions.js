@@ -80,6 +80,7 @@ const Admissions = () => {
                 name="name"
                 value={formData.name}
                 onChange={handleChange}
+                required
                 data-aos="fade-right"
               />
             </label>
@@ -94,6 +95,7 @@ const Admissions = () => {
                 className='inpla'
                 value={formData.age}
                 onChange={handleChange}
+                required
                 data-aos="fade-right" 
                 data-aos-delay="200" 
               />
@@ -109,6 +111,7 @@ const Admissions = () => {
                 className='inpl'
                 value={formData.email}
                 onChange={handleChange}
+                required
                 data-aos="fade-right" 
                 data-aos-delay="400" 
               />
@@ -123,6 +126,7 @@ const Admissions = () => {
                 name="address"
                 className='inp'
                 value={formData.address}
+                required
                 onChange={handleChange}
                 data-aos="fade-right" 
                 data-aos-delay="500" 
@@ -139,6 +143,7 @@ const Admissions = () => {
                 name="phoneNumber"
                 value={formData.phoneNumber}
                 onChange={handleChange}
+                required
                 data-aos="fade-right" 
                 data-aos-delay="500" 
               />
