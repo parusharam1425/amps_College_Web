@@ -56,14 +56,27 @@ const Admissions = () => {
 
   return (
     <div className="content-container">
-      <div className="text-center">
+
+        <div className=' a_head col-12 col-md-12 mb-3'>
+
+        <h3 className='' data-aos="fade-up" 
+                data-aos-delay="200" >
+          Fill the below form to admission
+          
+
+          <hr className='hr '/>
+         
+        </h3>
+        </div>
+      <div className='row col-12 col-md-6 text-center' >
         <form onSubmit={handleSubmit}>
           <div className="form-group">
-            <label htmlFor="name">
+            <label htmlFor="name" >
               Name:
               <input
                 type="text"
                 id="name"
+                className='inpl'
                 name="name"
                 value={formData.name}
                 onChange={handleChange}
@@ -78,6 +91,7 @@ const Admissions = () => {
                 type="number"
                 id="age"
                 name="age"
+                className='inpla'
                 value={formData.age}
                 onChange={handleChange}
                 data-aos="fade-right" 
@@ -92,6 +106,7 @@ const Admissions = () => {
                 type="email"
                 id="email"
                 name="email"
+                className='inpl'
                 value={formData.email}
                 onChange={handleChange}
                 data-aos="fade-right" 
@@ -106,24 +121,26 @@ const Admissions = () => {
                 type="text"
                 id="address"
                 name="address"
+                className='inp'
                 value={formData.address}
                 onChange={handleChange}
                 data-aos="fade-right" 
-                data-aos-delay="600" 
+                data-aos-delay="500" 
               />
             </label>
           </div>
           <div className="form-group">
             <label htmlFor="phoneNumber">
-              Phone Number:
+              Number:
               <input
                 type="tel"
+                className='inp'
                 id="phoneNumber"
                 name="phoneNumber"
                 value={formData.phoneNumber}
                 onChange={handleChange}
                 data-aos="fade-right" 
-                data-aos-delay="800" 
+                data-aos-delay="500" 
               />
             </label>
           </div>
