@@ -58,6 +58,10 @@
   .inpla{
     margin-left: 4rem;
   }
+  .arrow-icon{
+    color: rgb(146, 146, 36);
+    font-size: xx-large;
+  }
 .a_head{
   display: flex;
   flex-direction: row;
@@ -65,7 +69,6 @@
   align-items: center;
   color: black;
   font-size: 2rem;
-  margin-top: -2rem;
   font-weight: 500;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
