@@ -63,9 +63,10 @@ export default function Gallery() {
         <div className='image-grid col-md-9 col-12'>
             <img src={Img4} alt='4.jpg' className='image'  />
            <img src={Img3} alt='3.jpg' className='image' />
-            <img src={Img3} alt='3.jpg' className='image' />
+            <img src={Img1} alt='re.jpg' className='image' />
             <img src={Img5} alt='5.jpg' className='image' />
             <img src={Img6} alt='6.jpg' className='image' />
+            <img src={Img4} alt='.jpg' className='image' />
           </div>
         </div>
       </div>

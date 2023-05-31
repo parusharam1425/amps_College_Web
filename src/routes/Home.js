@@ -5,7 +5,7 @@ import Img from '../assects/maps-img3.jpg';
 import Img2 from '../assects/clg11.png'
 import Img3 from '../assects/maps-img1.jpg'
 import Img4 from '../assects/maps-img2.jpg'
-import Vid from './styles/maps.mp4'
+// import Vid from './styles/maps.mp4'
 
 import {Link} from 'react-router-dom'
 import './styles/Home.css'
@@ -148,14 +148,14 @@ export default function Home() {
         </div>
       </div>
     </section>
-    <srction>
+    {/* <section>
     <div className='video-section' data-aos="fade-up">
       <video controls className='video-player'>
         <source src={Vid} type="video/mp4" />
         Your browser does not support the video tag.
       </video>
     </div>
-    </srction>
+    </section> */}
       </div>
   );
 }
