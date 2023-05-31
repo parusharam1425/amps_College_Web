@@ -34,6 +34,12 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   border:2px  solid #f98502;
   margin-bottom: -0rem;
 }
+.gif{
+height: 10vh;
+width: 5vw;
+border-radius: 5px;
+margin-right: 2rem;
+}
   @media screen and (max-width: 768px) {
     .maps-head {
       font-size: 20px;

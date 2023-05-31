@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import Logo from '../assects/logo-psm.jpeg'
 import './styles/Header.css'
+import Gif from '../assects/odc-code.gif'
 import { FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa';
 
 
@@ -30,6 +31,8 @@ export default function Header({ isFooterDarkMode }) {
         <span className='span-head h'>(Affiliated to Jntu University)</span></h3>
       {showIcons && (
           <div className="icons">
+           
+        <img className='gif' src={Gif} alt='gif'/>
             <ul className="social-media">
               <li>
                 <a href="https://www.facebook.com">
