@@ -42,14 +42,20 @@ export default function Contact() {
     <section id="contact" className="contact">
       <div className="container">
         <div className="section-title">
-          <h2>Contact Us  </h2>
-          <hr className='hr' style={{marginBottom:'1rem'}}/>
+        <div className=' a_head col-12 col-md-12'>
+        <h3 className='' data-aos="fade-up" 
+                data-aos-delay="200" >
+          Contact Us
+          <hr className='hr '/>
+        </h3>
+        </div>
           
-          <p className='para'>Contact us to get started</p>
+          <p className='para' data-aos="fade-up" 
+                data-aos-delay="200">Contact us to get started</p>
         </div>
 
         <div className="row">
-        <div className=" c col-12 col-md-6 mt-5 mt-0">
+        <div className=" c col-12 col-md-6 mt-0">
             <form action="#" method="POST" role="form" className="php-email-form" onSubmit={submitHandler}>
               <div className="row">
                 <div className="form-group col-md-6">
