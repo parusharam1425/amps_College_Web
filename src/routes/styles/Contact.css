@@ -1,4 +1,4 @@
-/* Day Mode */
+/* 
 .contact-container {
     background-color: #ffffff;
     color: #000000;
@@ -30,7 +30,7 @@
     color: black;
   }
   
-  /* Night Mode */
+
   .night-mode .contact-container {
     background-color: #111111;
     color: #ffffff;
@@ -109,4 +109,181 @@ iframe {
     border: none;
     border-radius: 20px;
 }
+ */
 
+ /* Contact.css */
+
+ .contact-container {
+  background-color: #ffffff;
+  color: #000000;
+  padding: 2rem 3rem;
+  margin-top: 5rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+}
+
+
+.contact {
+  padding: 80px 0;
+}
+
+.contact .section-title {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.contact .section-title h2 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.contact .section-title p {
+  font-size: 18px;
+  color: #777;
+}
+
+.contact .info {
+  background: #f8f9fa;
+  padding: 30px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+}
+
+.contact .info i {
+  font-size: 20px;
+  color: #4d9fed;
+  float: left;
+  width: 44px;
+  height: 44px;
+  background: #e7f2fd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+}
+
+.contact .info h4 {
+  font-size: 22px;
+  font-weight: bold;
+  margin-left: 60px;
+  margin-bottom: 5px;
+  color: #4d9fed;
+}
+
+.contact .info p {
+  margin-left: 60px;
+  font-size: 14px;
+  color: #67768e;
+}
+/* Contact.css */
+.icon {
+  font-size: 2rem;
+}
+
+ .address {
+  color: blue;
+}
+
+.email {
+  color: red;
+}
+
+.phone {
+  color: green;
+}
+.map{
+  border-radius: 8px;
+}
+
+.contact .info iframe {
+  width: 100%;
+  height: 290px;
+  border: 0;
+}
+
+.contact .php-email-form {
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  width: 100%;
+}
+
+.contact .php-email-form .form-group {
+  margin-bottom: 20px;
+}
+
+.contact .php-email-form .form-group input,
+.contact .php-email-form .form-group textarea {
+  padding: 10px 14px;
+  border-radius: 4px;
+  box-shadow: none;
+  border: none;
+  font-size: 14px;
+  font-weight: normal;
+  color: #777;
+  width: 100%;
+  background: #f8f9fa;
+}
+
+.contact .php-email-form .form-group textarea {
+  resize: none;
+  height: 120px;
+}
+
+.contact .php-email-form .form-group input:focus,
+.contact .php-email-form .form-group textarea:focus {
+  background-color: #e6edf5;
+}
+
+.contact .php-email-form .text-center button[type="submit"] {
+  background: #4d9fed;
+  border: 0;
+  padding: 10px 40px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 4px;
+}
+
+.contact .php-email-form .text-center button[type="submit"]:hover {
+  background: #2e81d3;
+  cursor: pointer;
+}
+
+.contact .php-email-form .loading {
+  display: none;
+  background: #fff;
+  color: #fff;
+  text-align: center;
+  padding: 7px 0;
+  width: 30%;
+  margin: 0 auto;
+  display: none;
+}
+
+.contact .php-email-form .error-message {
+  display: none;
+  background: #fff;
+  color: #fff;
+  text-align: center;
+  padding: 7px 0;
+  width: 30%;
+  margin: 0 auto;
+  display: none;
+}
+
+.contact .php-email-form .sent-message {
+  display: none;
+  background: #fff;
+  color: #fff;
+  text-align: center;
+  padding: 7px 0;
+  width: 30%;
+  margin: 0 auto;
+  display: none;
+}
+.c{
+width: 100%;
+}
