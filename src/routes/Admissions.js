@@ -74,7 +74,7 @@ const Admissions = () => {
               Dear Student, We congratulate you on your success at Intermediate Level!<br />
               DOST (Degree Online Services, Telangana) welcome you to join in Undergraduate Courses, 2023-24 in Telangana.
               <br />
-              The only Gateway to Degree Courses (B.Com./B.Sc/BBA/BCA etc.) in the State of Telangana is DOST.
+              The only Gateway to Engineering & Degree Courses (B.tech./B.Sc/BBA/BCA etc.) in the State of Telangana is DOST.
             </p>
             <p>
               <strong>Process of Admission</strong>
