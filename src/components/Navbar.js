@@ -63,6 +63,27 @@ export default function Navbar() {
               </Link>
             </li>
             <li
+              className={`nav-item dropdown ${dropdownAbout ? 'show' : ''}`}
+              onMouseEnter={handleDropdownAbout}
+              onMouseLeave={handleDropdownAbout}
+            >
+              <Link className="a dropdown-toggle" onClick={closeMobileMenu}>
+                About Us
+              </Link>
+              <ul className={`dropdown-menu ${dropdownAbout ? 'show' : ''}`} >
+                <li>
+                  <Link to="/college" className="dropdown-item" onClick={closeMobileMenu}>
+                    About College
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/vision" className="dropdown-item" onClick={closeMobileMenu}>
+                    Vision and Mission
+                  </Link>
+                </li>
+              </ul>
+            </li>
+            <li
               className={`nav-item dropdown ${dropdownAcademics ? 'show' : ''}`}
               onMouseEnter={handleDropdownAcademics}
               onMouseLeave={handleDropdownAcademics}
@@ -124,27 +145,7 @@ export default function Navbar() {
                 </li>
               </ul>
             </li>
-             <li
-              className={`nav-item dropdown ${dropdownAbout ? 'show' : ''}`}
-              onMouseEnter={handleDropdownAbout}
-              onMouseLeave={handleDropdownAbout}
-            >
-              <Link className="a dropdown-toggle" onClick={closeMobileMenu}>
-                About Us
-              </Link>
-              <ul className={`dropdown-menu ${dropdownAbout ? 'show' : ''}`} >
-                <li data-aos='fade-left' data-aos-delay='100'>
-                  <Link to="/college" className="dropdown-item" onClick={closeMobileMenu}>
-                    About College
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/vision" className="dropdown-item" onClick={closeMobileMenu}>
-                    Vision and Mission
-                  </Link>
-                </li>
-              </ul>
-            </li>
+            
             <li className="nav-item">
               <Link to="/admissions" className="a" onClick={closeMobileMenu}>
                 Admissions
