@@ -56,7 +56,7 @@ export default function Contact() {
 
         <div className="row">
         <div className=" c col-12 col-md-6 mt-0">
-            <form action="#" method="POST" role="form" className="php-email-form" onSubmit={submitHandler}>
+            <form action="#" method="POST" className="php-email-form" onSubmit={submitHandler}>
               <div className="row">
                 <div className="form-group col-md-6">
                 <label htmlFor="name">Your Name</label>
