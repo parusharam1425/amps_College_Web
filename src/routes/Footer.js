@@ -1,6 +1,6 @@
 import React from 'react';
-
 import { FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa';
+import Video from './styles/maps.mp4'
 
 
 import './styles/Footer.css'
@@ -16,6 +16,12 @@ const Footer = () => {
           </h3>
 
           <p data-aos='fade-right' data-aos-delay='150'>Description of the college and its mission.</p>
+          <div className='video-section' data-aos='fade-right' data-aos-delay='150'>
+      <video controls className='video-player'>
+        <source src={Video} type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
 </div>
         </div>
         <div className='col-12 col-md-4'>
