@@ -47,7 +47,7 @@ export default function Home() {
 
         <h1 data-aos='fade-right' data-aos-delay='100'>About College</h1>
       
-        <p data-aos='fade-right' data-aos-delay='100'>
+        <p data-aos='fade-right' data-aos-delay='100' className='h-para'>
         By choosing to create a future for yourself from our institution means that we, 
         the Management and Faculty at MAPS B.Tech & Engineering COLLEGE is responsible for your 
         successful graduation and growth. You will cherish every day at your college, 
