@@ -15,7 +15,7 @@ const Footer = () => {
             <hr className='hr-footer'/>
           </h3>
 
-          <p data-aos='fade-right' data-aos-delay='150'>Description of the college and its mission.</p>
+          <p data-aos='fade-right' data-aos-delay='150'>At MAPS B.tech & Engeneerng College, we understand that by choosing to pursue your future with us</p>
           <div className='video-section' data-aos='fade-right' data-aos-delay='150'>
       <video controls className='video-player'>
         <source src={Video} type="video/mp4" />
