@@ -96,9 +96,13 @@
   
   .cse-para {
     margin-bottom: 20px;
+    line-height: 2rem;
+    font-size: 20px;
   }
   .contact{
     margin-right: 2rem;
+    line-height: 2rem;
+    font-size: 20px;
   }
   
   .mission-heading {
@@ -106,10 +110,15 @@
     font-weight: bold;
     margin-bottom: 10px;
   }
+  .pas{
+    line-height: 1.7rem;
+  }
   
   .mission-para {
     padding-left: 20px;
     margin-bottom: 20px;
+    line-height: 2rem;
+    font-size: 20px;
   }
   
   .last-one {
