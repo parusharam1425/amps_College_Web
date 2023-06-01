@@ -50,10 +50,12 @@ export default function Cse() {
         
           <div className='bg-color about-cse contact col-12 mb-3  col-md-6' data-aos='fade-up' data-aos-delay='100'>
             <h1 className='department-card-heading'>Department contact info</h1>
+            <br/>
             <h1 className='department-card-heading2'>Computer Science Engineering</h1>
-            <p className='department-card-heading3'>Manchiryal Road, Bolikunta khila Karimnagar, Telanaga-505475</p>
+            <p className='department-card-heading3 pas'>Manchiryal Road, Bolikunta khila Karimnagar, Telanaga-505475</p>
+            <br/>
             <p className='department-card-heading3'>+ 919949863721</p>
-            <p className='department-card-heading3'>info@ampsedu.in</p>
+            <p className='department-card-heading3 pas'>info@ampsedu.in</p>
             <div className=''>
               <button className='btn btn-primary btn-contact-us'>Contact Us</button>
             </div>
