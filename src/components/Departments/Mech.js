@@ -5,10 +5,10 @@ import {BiRightArrowAlt} from 'react-icons/bi'
 export default function Mech() {
   return (
     <>
-    <div className='content-container con'>
-      <div className='container'>
+    <div className='content-container'>
+      <div className='container pgd'>
       <div className='row'>
-        <div className='col-12 text-center mt-5'>
+        <div className='col-12 text-center'>
           <h1 className='cse-heading' data-aos='fade-up' data-aos-delay='100'>Mech Department</h1>
           <h1 className='engineering-heading' data-aos='fade-up' data-aos-delay='100'>Mechanical Engineering</h1>
         </div>

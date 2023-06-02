@@ -147,12 +147,12 @@
     animation-duration: 1s;
     animation-fill-mode: both;
   }
-  /* @media (max-width:576px) and (max-width:768px) {
-    .content-container{
-      padding: 40px;
+   @media (max-width:576px) and (max-width:768px) {
+    .pgd{
+      margin-top: 2rem;
  } 
-    
-  }*/
+}
+
   
   @keyframes fadeInUp {
     from {
