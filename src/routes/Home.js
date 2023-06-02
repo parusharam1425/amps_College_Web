@@ -2,7 +2,7 @@ import React from 'react';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
 import Img from '../assects/maps-img3.jpg';
-import Img2 from '../assects/clg11.png'
+// import Img2 from '../assects/clg11.png'
 import Img3 from '../assects/maps-img1.jpg'
 import Img4 from '../assects/maps-img2.jpg'
 
@@ -75,20 +75,20 @@ export default function Home() {
       <Link to='/departments/mech'>
       <img   src={Mech} alt='clg' className='img' data-aos='fade-left' data-aos-delay='100'/>
       </Link>
-      <p className='span-home'>Mech</p>
+     
       <Link to='/departments/cse'>
       <img  src={CSe} alt='clg' className='img' data-aos='fade-left' data-aos-delay='100'/>
       </Link>
-      <p className='span-home'>Cse</p>
+    
       </div>
       <div className='col-md-3 mt-4'>
       <img  src={Ece} alt='clg' className='img' data-aos='fade-left' data-aos-delay='100'/>
-      <p className='span-home'>Ece</p>
+      
       <Link to='/departments/eee' >
 
       <img  src={Eee} alt='clg' className='img' data-aos='fade-left' data-aos-delay='100'/>
       </Link>
-      <p className='span-home'>Eee</p>
+  
         </div>
       </div>
       </section>  
