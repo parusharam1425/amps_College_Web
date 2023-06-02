@@ -170,6 +170,7 @@ const Admissions = () => {
                 id="name"
                 className='inpl'
                 name="name"
+                placeholder='Your Name'
                 value={formData.name}
                 onChange={handleChange}
                 required
@@ -184,6 +185,7 @@ const Admissions = () => {
                 type="number"
                 id="age"
                 name="age"
+                placeholder='Your Age'
                 className='inpla'
                 value={formData.age}
                 onChange={handleChange}
@@ -200,6 +202,7 @@ const Admissions = () => {
                 type="email"
                 id="email"
                 name="email"
+                placeholder='Your Email'
                 className='inpl'
                 value={formData.email}
                 onChange={handleChange}
@@ -216,6 +219,7 @@ const Admissions = () => {
                 type="text"
                 id="address"
                 name="address"
+                placeholder='Enter Your Address'
                 className='inp'
                 value={formData.address}
                 required
@@ -233,6 +237,7 @@ const Admissions = () => {
                 className='inp'
                 id="phoneNumber"
                 name="phoneNumber"
+                placeholder='Enter Your Number'
                 value={formData.phoneNumber}
                 onChange={handleChange}
                 required
