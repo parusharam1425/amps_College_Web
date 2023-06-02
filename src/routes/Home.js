@@ -5,6 +5,8 @@ import Img from '../assects/maps-img3.jpg';
 import Img2 from '../assects/clg11.png'
 import Img3 from '../assects/maps-img1.jpg'
 import Img4 from '../assects/maps-img2.jpg'
+
+import {FiArrowRightCircle} from 'react-icons/fi'
 // import Vid from './styles/maps.mp4'
 
 import {Link} from 'react-router-dom'
@@ -79,69 +81,71 @@ export default function Home() {
       </h2>
         </div>
         <div className="row">
-          <div className="col-lg-4 text-center" data-aos='fade-up' data-aos-delay='100'>
+          <div className="col-md-4 mt-4 text-center" data-aos='fade-up' data-aos-delay='100'>
             <div className="icon-box">
-              <i style={{ color: "#ffbb2c" }}></i>
-              <h3><a href="/departments/cse">CSE (Computer Science & Enineering)</a></h3>
+              < FiArrowRightCircle className='home-icon' size={23}/>
+              <h3 className='course-head'><a href="/departments/cse">CSE (Computer Science & Enineering)</a></h3>
             </div>
           </div>
-          <div className="col-lg-4 mt-4 mt-md-0" data-aos="fade-up">
+          {/* <div className="col-lg-4 mt-4 mt-md-0" data-aos="fade-up">
             <div className="icon-box">
               <i  style={{ color: "#5578ff" }}></i>
               <h3><a href="/bca">BCA (Bachelor of Computer Applications)</a></h3>
             </div>
-          </div>
-          <div className="col-lg-4 col-md-4 mt-4 mt-md-0" data-aos="fade-up">
-            <div className="icon-box text-center">
-              <i  style={{ color: "#e80368" }}></i>
-              <h3><a href="/bachelor">B.Sc (Bachelor of Science)</a></h3>
-            </div>
-          </div>
-          <div className="col-lg-4 col-md-4 mt-4 mt-md-0" data-aos="fade-up">
+          </div> */}
+          
+          {/* <div className="col-lg-4 col-md-4 mt-4 mt-md-0" data-aos="fade-up">
             <div className="icon-box">
               <i  style={{ color: "#e361ff" }}></i>
               <h3><a href="/bcom">B.Com (Computer Applications)</a></h3>
+              </div>
+            </div> */}
+            <div className=" col-md-4 mt-4" data-aos="fade-up">
+              <div className="icon-box">
+              < FiArrowRightCircle className='home-icon' size={23}/>
+                <h3><a href="/ece">ECE (Electronics & Communication)</a></h3>
+              </div>
             </div>
-          </div>
-          <div className="col-lg-4 col-md-4 mt-4" data-aos="fade-up">
+          <div className=" col-md-4 mt-4" data-aos="fade-up">
             <div className="icon-box">
-              <i  style={{ color: "#47aeff" }}></i>
+            < FiArrowRightCircle className='home-on' size={23}/>
               <h3><a href="/departments/mech">Mech (Mechanical Engineering)</a></h3>
             </div>
           </div>
-          <div className="col-lg-4 col-md-4 mt-4" data-aos="fade-up">
+          <div className=" col-md-4 mt-4" data-aos="fade-up">
             <div className="icon-box">
-              <i  style={{ color: "#ffa76e" }}></i>
-              <h3><a href="/ece">ECE (Electronics & Communication Engineering)</a></h3>
+            < FiArrowRightCircle className='home-con' size={23}/>
+              <h3><a href="/departments/eee">EEE (Electronics & Electric)</a></h3>
             </div>
           </div>
-          <div className="col-lg-4 col-md-4 mt-4" data-aos="fade-up">
+          <div className=" col-md-4 mt-4" data-aos="fade-up">
             <div className="icon-box">
-              <i  style={{ color: "#11dbcf" }}></i>
-              <h3><a href="/departments/eee">EEE (Electronics & Electric Engineering)</a></h3>
+            < FiArrowRightCircle className='home-con' size={23}/>
+              <h3><a href="/bsc">B.Sc (Mathematics)</a></h3>
             </div>
           </div>
-          <div className="col-lg-4 col-md-4 mt-4" data-aos="fade-up">
+          <div className=" col-md-4 mt-4" data-aos="fade-up">
             <div className="icon-box">
-              <i  style={{ color: "#4233ff" }}></i>
-              <h3><a href="/bsc">B.Sc (Mathematics-Physics-Computer Science)</a></h3>
-            </div>
-          </div>
-          <div className="col-lg-4 col-md-4 mt-4" data-aos="fade-up">
-            <div className="icon-box">
-              <i  style={{ color: "#b2904f" }}></i>
+            < FiArrowRightCircle className='home-con' size={23}/>
               <h3><a href="/automobile">Automobile Engineering</a></h3>
             </div>
           </div>
-          <div className="col-lg-4 col-md-4 mt-4" data-aos="fade-up">
+          <div className=" col-md-4 mt-4" data-aos="fade-up">
             <div className="icon-box">
-              <i  style={{ color: "#b20969" }}></i>
+            < FiArrowRightCircle className='home-con' size={23}/>
               <h3><a href="/civil">Civil Engineering</a></h3>
             </div>
           </div>
-          <div className="col-lg-4 col-md-4 mt-4" data-aos="fade-up">
+          <div className=" col-md-4 mt-4" data-aos="fade-up">
+            <div className="icon-box text-center">
+            < FiArrowRightCircle className='home-con' size={23}/>
+            
+              <h3><a href="/bachelor">B.Sc (Bachelor of Science)</a></h3>
+            </div>
+          </div>
+          <div className=" col-md-4 mt-4" data-aos="fade-up">
             <div className="icon-box">
-              <i  style={{ color: "#ff5828" }}></i>
+            < FiArrowRightCircle className='home-con' size={23}/>
               <h3><a href="/chemical">Chemical Engineering</a></h3>
             </div>
           </div>

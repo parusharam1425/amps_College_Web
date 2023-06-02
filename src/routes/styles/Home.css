@@ -47,16 +47,33 @@
 
 /* courses */
 .features {
-  /* background: #f7f7f7; */
-  padding: 50px 0;
+  background: #f7f7f7;
 }
 
 .section-title {
   text-align: center;
   margin-bottom: 30px;
 }
+.home-icon{
+  margin-right: -2rem;
+  color: orange;
+}
 
+.home-con{
+  margin-right: 1rem;
+  color: orange;
+}
+
+.home-on{
+  margin-right: 0.1rem;
+  color: orange;
+}
 .icon-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
   text-align: center;
   margin-bottom: 20px;
   background-color: #fff;
@@ -66,10 +83,10 @@
 
 }
 
-.icon-box i {
+/* .icon-box i {
   font-size: 48px;
   margin-bottom: 10px;
-}
+} */
 
 .icon-box h3 {
   font-size: 24px;
@@ -79,7 +96,13 @@
 
 .icon-box a {
   color: #333;
+  font-size: 18px;
+  
   text-decoration: none;
+}
+.course-head{
+  font-size: 50px;
+  color: red;
 }
 
 /* Animi */
