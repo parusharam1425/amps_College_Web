@@ -62,6 +62,14 @@
     color: rgb(146, 146, 36);
     font-size: xx-large;
   }
+  .form-b{
+    background-color: #ccc;
+
+  }
+  .form-c{
+    padding-left: 2rem;
+    padding-bottom: 2rem;
+  }
 .a_head{
   display: flex;
   flex-direction: row;

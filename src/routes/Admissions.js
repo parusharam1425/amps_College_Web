@@ -60,7 +60,7 @@ const Admissions = () => {
   return (
     <div className="content-container">
       <section id="about-us" className="about-us">
-      <div className="container" data-aos="fade-up">
+      <div className="" data-aos="fade-up">
         <div className="head col-12 col-md-12 mt-4">
         <h3 data-aos="fade-up" 
                 data-aos-delay="200" >
@@ -150,6 +150,8 @@ const Admissions = () => {
         </div>
       </div>
     </section>
+<div className='form-b '>
+
 
         <div className=' a_head col-12 col-md-12 mb-3'>
         <h3 className='' data-aos="fade-up" 
@@ -158,7 +160,7 @@ const Admissions = () => {
           <hr className='hr '/>
         </h3>
         </div>
-      <div className='row col-12 col-md-6 text-center' >
+      <div className='row col-12 col-md-7 form-c text-center' >
         <form onSubmit={handleSubmit}>
           <div className="form-group">
             <label htmlFor="name" >
@@ -244,8 +246,14 @@ const Admissions = () => {
               Submit
             </button>
           </div>
+          
+        
         </form>
+        
       </div>
+      
+    </div>
+    
     </div>
   );
 };
