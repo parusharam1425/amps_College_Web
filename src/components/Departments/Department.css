@@ -80,11 +80,11 @@
     margin-top: 20px;
   }
   .about-cse {
-    border: 1.5px solid rgba(0, 0, 0, 0.5);
+    border: 1.3px solid rgba(8, 8, 115, 0.5);
     border-radius: 7px;
     padding: 10px;
     text-align: center;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 6px rgba(8, 8, 115, 0.5);
   }
   
   
