@@ -6,6 +6,11 @@ import Img2 from '../assects/clg11.png'
 import Img3 from '../assects/maps-img1.jpg'
 import Img4 from '../assects/maps-img2.jpg'
 
+import Mech from '../assects/mech.jpg'
+import Eee from '../assects/eee.jpg'
+import CSe from '../assects/b-tech-cse-iot.jpg'
+import Ece from '../assects/ece.jpg'
+
 import {FiArrowRightCircle} from 'react-icons/fi'
 // import Vid from './styles/maps.mp4'
 
@@ -45,7 +50,7 @@ export default function Home() {
 
       </div>  
       <div className='row' style={{padding:"20px"}}>
-        <div className='col-12 col-md-6'>
+        <div className='col-12 col-md-5'>
 
         <h1 data-aos='fade-right' data-aos-delay='100'>About College</h1>
       
@@ -66,10 +71,24 @@ export default function Home() {
 </button>
       </Link>
       </div>
-        <div className='col-md-6 mt-4'>
+        <div className='col-md-3 mt-4'>
+      <Link to='/departments/mech'>
+      <img   src={Mech} alt='clg' className='img' data-aos='fade-left' data-aos-delay='100'/>
+      </Link>
+      <p className='span-home'>Mech</p>
+      <Link to='/departments/cse'>
+      <img  src={CSe} alt='clg' className='img' data-aos='fade-left' data-aos-delay='100'/>
+      </Link>
+      <p className='span-home'>Cse</p>
+      </div>
+      <div className='col-md-3 mt-4'>
+      <img  src={Ece} alt='clg' className='img' data-aos='fade-left' data-aos-delay='100'/>
+      <p className='span-home'>Ece</p>
+      <Link to='/departments/eee' >
 
-
-      <img  src={Img2} alt='clg' className='img' data-aos='fade-left' data-aos-delay='100'/>
+      <img  src={Eee} alt='clg' className='img' data-aos='fade-left' data-aos-delay='100'/>
+      </Link>
+      <p className='span-home'>Eee</p>
         </div>
       </div>
       </section>  
