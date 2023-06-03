@@ -11,7 +11,7 @@ const Admissions = () => {
     name: '',
     age: '',
     email: '',
-    address: '',
+    designation: '',
     phoneNumber: '',
   
   });
@@ -31,7 +31,7 @@ const Admissions = () => {
       !formData.name ||
       !formData.age ||
       !formData.email ||
-      !formData.address ||
+      !formData.designation ||
       !formData.phoneNumber
     ) {
       return;
@@ -42,7 +42,7 @@ const Admissions = () => {
       name: '',
       age: '',
       email: '',
-      address: '',
+      designation: '',
       phoneNumber: '',
     });
   };
@@ -213,15 +213,15 @@ const Admissions = () => {
             </label>
           </div>
           <div className="form-group">
-            <label htmlFor="address">
-              Address:
+            <label htmlFor="designation">
+              Designation:
               <input
                 type="text"
-                id="address"
-                name="address"
-                placeholder='Enter Your Address'
+                id="designation"
+                name="designation"
+                placeholder='Enter Your Designation'
                 className='inp'
-                value={formData.address}
+                value={formData.designation}
                 required
                 onChange={handleChange}
                 data-aos="fade-right" 
