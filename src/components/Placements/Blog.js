@@ -60,12 +60,18 @@ export default function Blog() {
 
           <hr />
         </div>
-
-        <div className='col-md-12'>
-          <div className='img-container text-center' data-aos='fade-up' data-aos-delay='500'>
+        <div className='col-md-8'>
+        <div className='img-container text-center' data-aos='fade-up' data-aos-delay='500'>
             <header className='heading2'>Campus Recruitment Training</header>
             <img src={Img1} alt='9.jpg' className='aptitude-img' />
             </div>
+            </div>
+
+        <div className='col-md-12'>
+          {/* <div className='img-container text-center' data-aos='fade-up' data-aos-delay='500'>
+            <header className='heading2'>Campus Recruitment Training</header>
+            <img src={Img1} alt='9.jpg' className='aptitude-img' />
+            </div> */}
 
             <div className='margin'>
               <header className='quantitative-heading'>1. Quantitative Aptitude & Logical Reasoning</header>
@@ -106,8 +112,11 @@ export default function Blog() {
                   <img src={Img2} alt='13.jpg' className='aptitude-img' />
                 </div>
                 <div className='col-md-8' data-aos='fade-left' data-aos-delay='600'>
-                  <span className='aptitude-para'>The present-day world is fully equipped with informatics, science, technologies, computer dominances, and mechanical. For the explosion of knowledge, human beings are forced to work as mechanisms dealing with materials. Hence, a wider gap is maintaining among the human beings in the society between their life and their satisfaction. Therefore, it is happened only because of value less work on life and value erosion among them. Education alone cannot make them live with peace, harmonious and satisfactory in real-life situations. Therefore, value education is the only source to provide all those in the human lives and to make them into better and better humane. There is universal acceptance of the fact that the primary function of education is the development of an all-round and well-balanced personality of the student. Education is an attempt on the part of adult members of the human society to shape the development of the coming generations in accordance with its own ideals of life. Values that relate to the conservation of human life certainly belong in the educative process. For successful social living, children should be taught that traditional social institutions such as the family and school have a valuable place in our culture.</span>
-                </div>
+                  <span className='aptitude-para'>The present-day world is fully equipped with informatics, science, technologies, computer dominances, and mechanical. For the explosion of knowledge, human beings are forced to work as mechanisms dealing with materials. Hence, a wider gap is maintaining among the human beings in the society between their life and their satisfaction. 
+                  Therefore, it is happened only because of value less work on life and value erosion among them. Education alone cannot make them live with peace, harmonious and
+                   satisfactory in real-life situations. Therefore, value education is the only source to provide all those in the human lives and to make them into better and better humane. 
+                  
+                  </span> </div>
               </div>
             </div>
 
@@ -118,7 +127,7 @@ export default function Blog() {
                   <img src={Img5} alt='14.jpg' className='aptitude-img' />
                 </div>
                 <div className='col-md-8' data-aos='fade-left' data-aos-delay='600'>
-                  <span className='aptitude-para'>An interview is a goal-driven transaction characterized by questions and answers between two strangers. This is usually a dyadic transaction, Interviews share many characteristics with different types of communication. Personality interview questions allow candidates to demonstrate their suitability for a company's culture. After learning about your hard skills and qualifications, a hiring manager may want to determine what soft skills you have and how your personality can contribute to the job's responsibilities. Interviewers may ask personality questions to understand a candidate's work habits, collaboration strategies, and interests outside of work. You can use these questions to discuss about you to build a strong impression and showcase what makes you a uniquely qualified candidate.</span>
+                  <span className='aptitude-para'>An interview is a goal-driven transaction characterized by questions and answers between two strangers. This is usually a dyadic transaction, Interviews share many characteristics with different types of communication. Personality interview questions allow candidates to demonstrate their suitability for a company's culture. After learning about your hard skills and qualifications, a hiring manager may want to determine what soft skills you have and how your personality can contribute to the job's responsibilities. Interviewers may ask personality questions to understand a candidate's work habits, collaboration strategies, and interests outside of work.</span>
                 </div>
               </div>
             </div>
