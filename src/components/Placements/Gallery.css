@@ -60,7 +60,7 @@
   
   .image {
     width: 100%;
-    height: auto;
+    height: 40vh;
     cursor: pointer;
     border-radius: 5px;
     transition: transform 0.3s ease;
@@ -69,4 +69,28 @@
   .image:hover {
     transform: scale(1.1);
   }
-  
+
+  .desc{
+    font-size: 18px;
+    font-weight: 400;
+
+  }
+  .image-light{
+    width: 20vw;
+    height: 30vh;
+  }
+
+.ReactModal__Overlay {
+  background-color: rgba(0, 0, 0, 0.8) !important;
+  height: auto;
+}
+
+.ReactModal__CloseButton {
+  color: red !important;
+}
+
+.lightbox-caption {
+  color: #fff;
+  font-size: 16px;
+  margin-top: 10px;
+}
