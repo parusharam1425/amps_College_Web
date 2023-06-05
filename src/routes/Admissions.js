@@ -229,7 +229,7 @@ const Admissions = () => {
               />
             </label>
           </div>
-          <div className="form-group">
+          {/* <div className="form-group">
             <label htmlFor="phoneNumber">
               Number:
               <input
@@ -245,7 +245,7 @@ const Admissions = () => {
                 data-aos-delay="500" 
               />
             </label>
-          </div>
+          </div> */}
           <div className="form-group">
             <button type="submit" data-aos="fade-up">
               Submit
