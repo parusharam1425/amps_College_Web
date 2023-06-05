@@ -162,7 +162,6 @@ const Admissions = () => {
         </div>
       </div>
     </section>
-<div className='form-b '>
         <div className=' a_head col-12 col-md-12 mb-3'>
         <h3 className='' data-aos="fade-up" 
                 data-aos-delay="200" >
@@ -170,6 +169,7 @@ const Admissions = () => {
           <hr className='hr '/>
         </h3>
         </div>
+<div className='form-b '>
       <div className='row col-12 col-md-7 form-c text-center' >
         <form onSubmit={handleSubmit}>
           <div className="form-group">
