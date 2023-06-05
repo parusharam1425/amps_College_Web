@@ -1,5 +1,5 @@
 import React from 'react';
-import {Routes, Route} from 'react-router-dom'
+import {Routes, Route} from 'react-router-dom';
 import './App.css';
 import './index.css';
 
@@ -33,8 +33,6 @@ function App() {
     <>
     <Navbar/> 
     <Routes>
-
-
       <Route exact path='/' element={<Home/>} />
       <Route path='/departments/eee' element={<Eee/>} />
       <Route path='/admissions' element={<Admissions/>} />
@@ -51,12 +49,10 @@ function App() {
       <Route path='/gallery' element={<Gallery/>} />
       <Route path='/jobs' element={<Jobs/>} />
       <Route path='/contact' element={<Contact/>} />
-      <Route path='/not-found' element={<NotFound/>} />
+      <Route  element={<NotFound/>} />
         
       <Route path='/test' element={<Hoome/>} />
       <Route path='/testing' element={<Form/>} />
-  
-      
     </Routes>
      <Footer/>
      
