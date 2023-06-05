@@ -42,22 +42,21 @@ export default function Contact() {
     <section id="contact" className="contact">
       <div className="container">
         <div className="section-title">
-        <div className=' a_head col-12 col-md-12'>
-        <h3 className='' data-aos="fade-up" 
+        <div className=' a_head col-12 col-md-12 mt-0'>
+        <h3 className='med' data-aos="fade-up" 
                 data-aos-delay="200" >
           Contact Us
           <hr className='hr '/>
         </h3>
         </div>
           
-          <p className='para' data-aos="fade-up" 
-                data-aos-delay="200">Contact us to get started</p>
+          <p className='para mt-0' data-aos="fade-up" data-aos-delay="200">Contact us to get started</p>
         </div>
 
         <div className="row">
-        <div className=" c col-12 col-md-6 mt-0">
-            <form action="#" method="POST" className="php-email-form" onSubmit={submitHandler}>
-              <div className="row">
+        <div className=" col-12 col-md-6 ">
+            <form action="#" method="POST" className="php-email-form info-c" onSubmit={submitHandler} data-aos="fade-right" data-aos-delay="200">
+              <div className="row ">
                 <div className="form-group col-md-6">
                 <label htmlFor="name">Your Name</label>
                   <input type="text" className="form-control" name="name" id="name" placeholder="Your Name" required  onChange={changeHandler}/>
@@ -86,8 +85,8 @@ export default function Contact() {
               </div>
             </form>
           </div>
-          <div className="col-12 col-md-6 d-flex align-items-stretch">
-            <div className="info">
+          <div className="col-12 col-md-6">
+            <div className="info" data-aos="fade-left" data-aos-delay="200">
               <div className="address icon">
              <BiMap />
           

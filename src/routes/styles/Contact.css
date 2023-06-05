@@ -112,14 +112,23 @@ iframe {
  */
 
  /* Contact.css */
+.info{
+  border-radius: 6px;
+  border-top: 4px solid orange;
+}
+.info-c{
+  border-radius: 6px;
+  border-top: 4px solid orange;
+}
+
 
  .para{
-  color: #000000;
+  color: black;
   font-size: 20px;
   font-weight: 300;
  }
  .contact-container {
-  background-color: #ffffff;
+  background-color: #cecee5;
   color: #000000;
   padding: 2rem 3rem;
   margin-top: 9rem;
@@ -133,6 +142,7 @@ iframe {
 .contact {
   line-height: 1rem;
   padding: 0px 0;
+  
 }
 
 .contact .section-title {
@@ -168,7 +178,7 @@ iframe {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 50px;
+  border-radius:6px;
   transition: all 0.3s ease-in-out;
 }
 
@@ -289,6 +299,13 @@ iframe {
   margin: 0 auto;
   display: none;
 }
-.c{
-width: 100%;
+
+
+@media screen and (max-width:768px) {
+  .info{
+    margin-top: 1rem;
+  }
+  .para{
+    margin-bottom: -2rem;
+  }
 }
