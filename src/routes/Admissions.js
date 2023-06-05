@@ -1,9 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
+import axios from 'axios';
 
 import {RiArrowRightSFill} from 'react-icons/ri'
-import 'aos/dist/aos.css';
 
-import AOS from 'aos';
 import './styles/Admissions.css';
 
 const Admissions = () => {
@@ -11,10 +10,14 @@ const Admissions = () => {
     name: '',
     age: '',
     email: '',
-    designation: '',
-    phoneNumber: '',
-  
+    course: '',
+    phonenumber: '',
   });
+
+  const [submitting, setSubmitting] = useState(false);
+  const [error, setError] = useState('');
+
+
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -26,13 +29,14 @@ const Admissions = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    addAdmission();
 
     if (
       !formData.name ||
       !formData.age ||
       !formData.email ||
-      !formData.designation ||
-      !formData.phoneNumber
+      !formData.course ||
+      !formData.phonenumber
     ) {
       return;
     }
@@ -42,19 +46,27 @@ const Admissions = () => {
       name: '',
       age: '',
       email: '',
-      designation: '',
-      phoneNumber: '',
+      course: '',
+      phonenumber: '',
     });
   };
 
-
-  useEffect(() => {
-    AOS.init({
-      duration: 1000, 
-      once: true, 
-    });
-  }, []);
-
+  const addAdmission = async () => {
+    setSubmitting(true);
+    try {
+      const response = await axios.post('http://localhost:3001/admissions', formData);
+      console.log(response);
+      alert('Admission Successfully Submitted');
+      setError('');
+    } catch (error) {
+      console.error(error);
+      alert('Error submitting admission');
+      setError('Internal Server Error');
+    } finally {
+      setSubmitting(false);
+    }
+  };
+  
   
 
   return (
@@ -151,8 +163,6 @@ const Admissions = () => {
       </div>
     </section>
 <div className='form-b '>
-
-
         <div className=' a_head col-12 col-md-12 mb-3'>
         <h3 className='' data-aos="fade-up" 
                 data-aos-delay="200" >
@@ -213,15 +223,15 @@ const Admissions = () => {
             </label>
           </div>
           <div className="form-group">
-            <label htmlFor="designation">
-              Designation:
+            <label htmlFor="course">
+              Course:
               <input
                 type="text"
-                id="designation"
-                name="designation"
-                placeholder='Enter Your Designation'
+                id="course"
+                name="course"
+                placeholder='Enter Your course'
                 className='inp'
-                value={formData.designation}
+                value={formData.course}
                 required
                 onChange={handleChange}
                 data-aos="fade-right" 
@@ -229,27 +239,28 @@ const Admissions = () => {
               />
             </label>
           </div>
-          {/* <div className="form-group">
-            <label htmlFor="phoneNumber">
+          <div className="form-group">
+            <label htmlFor="phonenumber">
               Number:
               <input
                 type="tel"
                 className='inp'
-                id="phoneNumber"
-                name="phoneNumber"
+                id="phonenumber"
+                name="phonenumber"
                 placeholder='Enter Your Number'
-                value={formData.phoneNumber}
+                value={formData.phonenumber}
                 onChange={handleChange}
                 required
                 data-aos="fade-right" 
                 data-aos-delay="500" 
               />
             </label>
-          </div> */}
+          </div>
           <div className="form-group">
-            <button type="submit" data-aos="fade-up">
-              Submit
+          <button type="submit" disabled={submitting} data-aos="fade-up">
+              {submitting ? 'Submitting...' : 'Submit'}
             </button>
+            {error && <p>{error}</p>}
           </div>
           
         
