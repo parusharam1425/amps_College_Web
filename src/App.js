@@ -13,7 +13,6 @@ import Contact from './routes/Contact';
 import Details from './components/Placements/Details';
 import Blog from './components/Placements/Blog';
 import Navbar from './components/Navbar';
-import Hoome from './DataBase/Hoome';
 import Footer from './routes/Footer';
 import College from './components/AboutUs/College';
 import Vision from './components/AboutUs/Vision';
@@ -47,9 +46,9 @@ function App() {
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/jobs" element={<Jobs />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/test" element={<Hoome />} />
           <Route path="/submit" element={<SubmitAdmissions />} />
           <Route path="*" element={<NotFound />} />
+
         </Routes>
       </Router>
       <Footer />
