@@ -80,17 +80,6 @@
     height: 30vh;
   }
 
-.ReactModal__Overlay {
-  background-color: rgba(0, 0, 0, 0.8) !important;
-  height: auto;
-}
 
-.ReactModal__CloseButton {
-  color: red !important;
-}
 
-.lightbox-caption {
-  color: #fff;
-  font-size: 16px;
-  margin-top: 10px;
-}
+

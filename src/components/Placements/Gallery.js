@@ -101,8 +101,8 @@ const Gallery = () => {
           </div>
         </div>
         {lightboxOpen && (
-          <Lightbox className="image-light"
-            mainSrc={images[lightboxIndex]}
+          <Lightbox 
+            mainSrc={images[lightboxIndex] }
             nextSrc={images[(lightboxIndex + 1) % images.length]}
             prevSrc={images[(lightboxIndex + images.length - 1) % images.length]}
             onCloseRequest={closeLightbox}
