@@ -40,7 +40,7 @@ export default function Contact() {
     <div className="contact-container">
     
     <section id="contact" className="contact">
-      <div className="container">
+      <div className="">
         <div className="section-title">
         <div className=' a_head col-12 col-md-12 mt-0'>
         <h3 className='med' data-aos="fade-up" 
@@ -49,7 +49,6 @@ export default function Contact() {
           <hr className='hr '/>
         </h3>
         </div>
-          
           <p className='para mt-0' data-aos="fade-up" data-aos-delay="200">Contact us to get started</p>
         </div>
 
@@ -108,7 +107,7 @@ export default function Contact() {
               </div>
               <div>
 
-              <iframe className='map' src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15227.508516420952!2d78.5437323!3d17.4176833!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb99e0001a2553%3A0xeef8bc399e37f820!2sOmega%20Degree%20%26%20PG%20College!5e0!3m2!1sen!2sin!4v1681076423687!5m2!1sen!2sin" frameBorder="0" allowFullScreen="" title="mapOmega"></iframe>
+              <iframe className='map' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.8703399995047!2d78.52475600953004!3d17.41800900185574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9973bb0015e9%3A0x2b40415d8a716d20!2sOsmania%20University!5e0!3m2!1sen!2sin!4v1685936830355!5m2!1sen!2sin" width="600" height="450" style={{border:'0'}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title='amps-map'></iframe>
               </div>
 
             </div>
