@@ -1,4 +1,4 @@
-table{
+ table{
     caption-side: bottom;
     border-collapse: collapse;
     border-spacing: 2px;
@@ -12,17 +12,25 @@ th{
     border-color: inherit;
     border-style: solid;
     border-width: 0;
-}
+} 
 .text-justify{
     text-align: justify;
 }
-.heading{
+.faculty{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     font-weight: bold;
-    font-size: 35px;
+    font-size: 20px;
+    
 
 }
+td{
+    color: black;
+}
+
 .tr-style{
     font-weight: bold;
 }
@@ -38,3 +46,6 @@ th{
     transform: translateY(0);
   }
 
+.content-container{
+    margin-top: 10rem;
+}

@@ -10,8 +10,12 @@ AOS.init();
 export default function Faculty() {
   return (
     <div className='content-container'>
-         <div>
-      <h1 className='heading'> Faculty</h1>
+       <div className='faculty col-12 col-md-12'>
+
+      <h1> Faculty
+      <hr className='hr '/>
+      </h1>
+       </div>
       <div className='text-justify'>
         <table className='table'> 
     
@@ -116,6 +120,6 @@ export default function Faculty() {
     </div>
     </div>
 
-    </div>
+
   )
 }
