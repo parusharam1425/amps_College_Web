@@ -22,7 +22,7 @@ import Faculty from './components/Faculty/Faculty';
 import Hostel from './components/Campus/Hostel';
 import Transport from './components/Campus/Transport';
 import NotFound from './routes/NotFound';
-import SubmitAdmissions from './DataBase/submitAdmissions';
+import Data from './DataBase/data';
 
 function App() {
   return (
@@ -46,7 +46,7 @@ function App() {
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/jobs" element={<Jobs />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/submit" element={<SubmitAdmissions />} />
+         <Route path='/dbtest' element={<Data/>} />
           <Route path="*" element={<NotFound />} />
 
         </Routes>
