@@ -27,9 +27,11 @@ th{
     
 
 }
-td{
-    color: black;
-}
+.night-mode td{
+
+    background-color: #333;
+    color: #fff;
+  }
 
 .tr-style{
     font-weight: bold;
