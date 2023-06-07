@@ -26,9 +26,16 @@ const Admissions = () => {
     }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async(e) => {
     e.preventDefault();
-    addAdmission();
+    await addAdmission();
+    setFormData({
+      name: '',
+      age: '',
+      email: '',
+      course: '',
+      phonenumber: '',
+    })
   }
 
   const addAdmission = async () => {
