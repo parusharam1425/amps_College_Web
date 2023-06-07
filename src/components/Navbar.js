@@ -202,8 +202,6 @@ export default function Navbar() {
                 </li>
               </ul>
             </li>
-
-            
             <li className="nav-item">
               <Link to="/contact" className="a" onClick={closeMobileMenu}>
                 Contact Us
