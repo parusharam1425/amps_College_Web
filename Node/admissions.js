@@ -1,43 +1,3 @@
-// const express = require('express');
-// const app = express();
-// const { Pool } = require('pg');
-// const pool = new Pool({
-//   user: 'postgres',
-//   host: 'localhost',
-//   database: 'MapsDB',
-//   password: 'Parshaw1425',
-//   port: 5432,
-// });
-
-// const getAdmission = () => {
-//   return new Promise((resolve, reject) => {
-//     pool.query('select * from admissions', (error, result) => {
-//       if (error) {
-//         reject(error);
-//       }
-//       resolve(result.rows);
-//     });
-//   });
-// };
-
-// const addAdmission = () => {
-//   return new Promise((resolve, reject) => {
-//     const { name, age, email, course, phonenumber } = body;
-
-//     const query = `INSERT INTO admissions (name, age, email, course, phonenumber) VALUES ('${name}', '${age}', '${email}', '${course}', '${phonenumber}')`;
-
-//     pool.query(query, (error, result) => {
-//       if (error) {
-//         reject(`Error adding new admission: ${error}`);
-//       }
-
-//       resolve(`New admission added: ${result.rows[0]}`);
-//     });
-//   });
-// };
-
-// module.exports = { getAdmission, addAdmission };
-
 
 const Pool = require('pg').Pool
 const pool = new Pool({
@@ -71,8 +31,21 @@ const getAdmission = () => {
     })
     })
     }
-    module.exports = {
-    getAdmission,
-    addAdmission,
-  
-    }
+
+    
+    const deleteAdmission = (id) => {
+        return new Promise(function(resolve, reject) {
+          pool.query('DELETE FROM admissions WHERE id = $1', [id], (error, results) => {
+            if (error) {
+              reject(error);
+            }
+            resolve(`Admission with ID ${id} has been deleted.`);
+          });
+        });
+      };
+      
+      module.exports = {
+        getAdmission,
+        addAdmission,
+        deleteAdmission,
+      };
