@@ -17,8 +17,20 @@ const Data = () => {
           setIsLoaded(true);
           setError(error);
         }
-      )
+      );
   }, []);
+
+  const handleDelete = (id) => {
+    fetch(`http://localhost:3001/admissions/${id}`, {
+      method: 'DELETE'
+    })
+      .then(() => {
+        setUsers(users.filter(user => user.id !== id));
+      })
+      .catch(error => {
+        setError(error);
+      });
+  };
 
   if (error) {
     return <div className='content-container'>Error: {error.message}</div>;
@@ -34,18 +46,21 @@ const Data = () => {
               <th>Age</th>
               <th>Email</th>
               <th>Course</th>
-              <th>number</th>
+              <th>Number</th>
+              <th>Actions</th>
             </tr>
           </thead>
           <tbody>
             {users.map(user => (
-              <tr key={user.name}>
+              <tr key={user.id}>
                 <td>{user.name}</td>
                 <td>{user.age}</td>
                 <td>{user.email}</td>
                 <td>{user.course}</td>
                 <td>{user.phonenumber}</td>
-                
+                <td>
+                  <button onClick={() => handleDelete(user.id)}>Delete</button>
+                </td>
               </tr>
             ))}
           </tbody>
@@ -53,6 +68,6 @@ const Data = () => {
       </div>
     );
   }
-}
+};
 
 export default Data;
