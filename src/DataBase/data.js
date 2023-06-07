@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-
+import './data.css'
 const Data = () => {
   const [error, setError] = useState(null);
   const [isLoaded, setIsLoaded] = useState(false);
@@ -36,18 +36,22 @@ const Data = () => {
     return <div className='content-container'>Error: {error.message}</div>;
   } else if (!isLoaded) {
     return <div className='content-container'>Loading...</div>;
+  } else if (users.length === 0) {
+    return <div className='db_data'>
+
+    </div>
   } else {
     return (
       <div className='content-container'>
         <table className='table'>
           <thead>
             <tr>
-              <th>Name</th>
-              <th>Age</th>
-              <th>Email</th>
-              <th>Course</th>
-              <th>Number</th>
-              <th>Actions</th>
+              <td>Name</td>
+              <td>Age</td>
+              <td>Email</td>
+              <td>Course</td>
+              <td>Number</td>
+              <td>Actions</td>
             </tr>
           </thead>
           <tbody>
@@ -59,7 +63,7 @@ const Data = () => {
                 <td>{user.course}</td>
                 <td>{user.phonenumber}</td>
                 <td>
-                  <button onClick={() => handleDelete(user.id)}>Delete</button>
+                  <button className='btn btn-danger' onClick={() => handleDelete(user.id)}>Delete</button>
                 </td>
               </tr>
             ))}
