@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-
 import {RiArrowRightSFill} from 'react-icons/ri'
+import Data from '../DataBase/data';
 
 import './styles/Admissions.css';
 
@@ -13,10 +13,9 @@ const Admissions = () => {
     course: '',
     phonenumber: '',
   });
-
   const [submitting, setSubmitting] = useState(false);
   const [error, setError] = useState('');
-
+  const [submittedData, setSubmittedData] = useState(null);
 
 
   const handleChange = (e) => {
@@ -30,36 +29,18 @@ const Admissions = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     addAdmission();
-
-    if (
-      !formData.name ||
-      !formData.age ||
-      !formData.email ||
-      !formData.course ||
-      !formData.phonenumber
-    ) {
-      return;
-    }
-
-    console.log(formData);
-    setFormData({
-      name: '',
-      age: '',
-      email: '',
-      course: '',
-      phonenumber: '',
-    });
-  };
+  }
 
   const addAdmission = async () => {
     setSubmitting(true);
     try {
       const response = await axios.post('http://localhost:3001/admissions', formData);
-      console.log(response);
-      alert('Admission Successfully Submitted');
+      // console.log(response);
+      setSubmittedData(response.data);
+      // alert('Admission Successfully Submitted');
       setError('');
     } catch (error) {
-      console.error(error);
+      // console.error(error);
       alert('Error submitting admission');
       setError('Internal Server Error');
     } finally {
@@ -67,8 +48,6 @@ const Admissions = () => {
     }
   };
   
-  
-
   return (
     <div className="content-container">
       <section id="about-us" className="about-us">
@@ -270,8 +249,16 @@ const Admissions = () => {
       
     </div>
     
+    {submittedData ? (
+        <div className="result">
+           <Data/>
+        </div>
+      ) : null}
+
     </div>
   );
 };
 
 export default Admissions;
+
+

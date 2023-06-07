@@ -84,6 +84,9 @@
   button:hover {
    background-color: #4caf50;
   }
+.result{
+  margin-top: -11rem;
+}
   
   @media screen and (max-width:768px) {
     .a_head{
