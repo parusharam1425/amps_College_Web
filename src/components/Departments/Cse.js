@@ -1,5 +1,6 @@
 import React from 'react';
 import { BiRightArrowAlt } from "react-icons/bi";
+import { Link } from 'react-router-dom';
 import './Department.css';
 
 export default function Cse() {
@@ -57,7 +58,10 @@ export default function Cse() {
             <p className='department-card-heading3'>+ 919949863721</p>
             <p className='department-card-heading3 pas'>info@ampsedu.in</p>
             <div className=''>
+              <Link to="/contact">
               <button className='btn btn-primary btn-contact-us'>Contact Us</button>
+              </Link>
+              
             </div>
           </div>
           <div className='col-12 col-md-5 about-cse ' data-aos='fade-up' data-aos-delay='100'>
