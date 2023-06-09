@@ -4,8 +4,6 @@ import { BiMap, BiEnvelope, BiPhone } from 'react-icons/bi';
 import './styles/Contact.css';
 
 export default function Contact() {
-
-
   const [status, setStatus] = useState("Submit");
   const submitHandler = async (e) => {
     e.preventDefault();
@@ -27,16 +25,13 @@ export default function Contact() {
     setStatus("Submit");
     let result = await response.json();
     alert(result.status);
-
     name.value = "";
     email.value = "";
     subject.value = "";
     message.value = "";
   };
-
   return (
     <div className="contact-container">
-
       <section id="contact" className="contact">
         <div className="">
           <div className="section-title">
@@ -49,7 +44,6 @@ export default function Contact() {
             </div>
             <p className='para mt-0' data-aos="fade-up" data-aos-delay="200">Contact us to get started</p>
           </div>
-
           <div className="row">
             <div className=" col-12 col-md-6 ">
               <form className="php-email-form info-c" onSubmit={submitHandler} data-aos="fade-right" data-aos-delay="200">
@@ -57,7 +51,6 @@ export default function Contact() {
                   <div className="form-group col-md-6">
                     <label htmlFor="name">Your Name</label>
                     <input type="text" className="form-control" name="name" id="name" placeholder="Your Name" required />
-
                   </div>
                   <div className="form-group col-md-6 mt-3 mt-md-0">
                     <label htmlFor="email">Your Email</label>
@@ -110,8 +103,6 @@ export default function Contact() {
 
               </div>
             </div>
-
-
           </div>
         </div>
       </section>
