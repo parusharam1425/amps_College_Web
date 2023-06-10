@@ -63,7 +63,7 @@ export default function Contact() {
                 </div>
                 <div className="form-group mt-3">
                   <label htmlFor="message">Message</label>
-                  <textarea className="form-control" name="message" rows="10" required ></textarea>
+                  <textarea className="form-control" name="message" rows="10" placeholder='Message' required ></textarea>
                 </div>
                 <div className="my-3">
                   <div className="loading">Loading</div>

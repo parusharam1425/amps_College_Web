@@ -155,7 +155,7 @@ export default function Navbar() {
               onMouseEnter={handleDropdownCampus}
               onMouseLeave={handleDropdownCampus}>
               
-              <Link to="/campus" className="a dropdown-toggle" onClick={closeMobileMenu}>
+              <Link className="a dropdown-toggle" onClick={closeMobileMenu}>
                 Campus Life
               </Link>
               <ul className={`dropdown-menu ${dropdownCampus ? 'show' : ''}`}>
